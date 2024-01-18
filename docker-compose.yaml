@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+    wine-box:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        restart: unless-stopped
+        container_name: "wine-box"
+        ports:
+            - "8080:8080"
+        tty: true
