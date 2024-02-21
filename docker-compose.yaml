@@ -7,6 +7,8 @@ services:
             dockerfile: Dockerfile
         restart: unless-stopped
         container_name: "wine-box"
+        environment:
+            VNC_PASSWORD: "1"
         ports:
             - "8080:8080"
         tty: true

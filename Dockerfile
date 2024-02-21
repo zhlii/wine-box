@@ -27,7 +27,7 @@ ENV DISPLAY_WIDTH=1280 \
 
 COPY root/ /
 RUN mv /index.html /usr/share/novnc/
-RUN mkdir ~/.vnc && x11vnc -storepasswd ${VNC_PASSWORD:-vncpass} ~/.vnc/passwd
+RUN mkdir ~/.vnc
 
 EXPOSE 8080
 
