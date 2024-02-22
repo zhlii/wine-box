@@ -1,5 +1,5 @@
 # https://github.com/zhlii/wine
-FROM registry.cn-hangzhou.aliyuncs.com/xduo/wine:1.0.0
+FROM registry.cn-hangzhou.aliyuncs.com/xduo/wine:9.0.0
 
 #deps
 RUN set -eux;
